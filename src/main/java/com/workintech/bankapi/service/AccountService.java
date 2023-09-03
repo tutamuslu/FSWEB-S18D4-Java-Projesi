@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface AccountService {
     List<Account> getAll();
     Optional<Account> getById(int id);
-    Account addAddress(Account account);
-    Account updateAddress(int id, Account account);
-    Account deleteAddress(int id);
+    Account addAccount(int customerId, Account account);
+    Account updateAccount(int customerId, Account account);
+    Account deleteAccount(int id);
 }
